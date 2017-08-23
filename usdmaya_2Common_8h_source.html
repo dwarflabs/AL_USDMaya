@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.23.2</span>
+   &#160;<span id="projectnumber">0.23.3</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -206,23 +206,19 @@ $(document).ready(function(){initNavTree('usdmaya_2Common_8h_source.html','');})
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#ifndef AL_ENABLE_TRACE</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"># define AL_ENABLE_TRACE 0</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#define IGNORE_USD_WARNINGS_PUSH \</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">  _Pragma (&quot;GCC diagnostic push&quot;) \</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">  _Pragma (&quot;GCC diagnostic ignored \&quot;-Wunused-local-typedefs\&quot;&quot;)</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#define IGNORE_USD_WARNINGS_PUSH \</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">  _Pragma (&quot;GCC diagnostic push&quot;) \</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">  _Pragma (&quot;GCC diagnostic ignored \&quot;-Wunused-local-typedefs\&quot;&quot;)</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#define IGNORE_USD_WARNINGS_POP \</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">  _Pragma (&quot;GCC diagnostic pop&quot;)</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#define IGNORE_USD_WARNINGS_POP \</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">  _Pragma (&quot;GCC diagnostic pop&quot;)</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li><li class="navelem"><a class="el" href="dir_1bb7ef9dbabe305f6710c4d5a2d124d7.html">AL_USDMaya</a></li><li class="navelem"><a class="el" href="dir_1718e17ee0fed015a6dbff620e7e9f68.html">AL</a></li><li class="navelem"><a class="el" href="dir_bfd18ef9f7ca57c4b661440a6abf5ddf.html">usdmaya</a></li><li class="navelem"><b>Common.h</b></li>
-    <li class="footer">Generated on Tue Aug 22 2017 12:27:24 for AL_USDMaya by
+    <li class="footer">Generated on Wed Aug 23 2017 17:09:45 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>
